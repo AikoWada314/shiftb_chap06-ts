@@ -10,7 +10,7 @@ import type { Post } from '../../types/Types';
 export default function Detail() {
   const { id } = useParams();
   const [post, setPost] = useState<Post | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetcher = async () => {
